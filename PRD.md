@@ -191,3 +191,203 @@ success
 fail
 success
 
+
+购物车模块
+01- /cart/list.do
+| request 
+登陆状态
+| response
+fail
+success
+
+02- /cart/add.do
+| request 
+productId,count
+| response
+fail
+success
+
+03- /cart/update.do
+| request 
+productId,count
+| response
+fail
+success
+
+04- /cart/delete_product.do
+| request 
+[productId]
+| response
+fail
+success
+
+05- /cart/select.do
+| request 
+productId
+| response
+fail
+success
+
+06- /cart/un_select.do
+| request 
+productId
+| response
+fail
+success
+
+07- /cart/get_cart_product_count.do
+| request 
+
+| response
+fail
+success
+
+08- /cart/select_all.do
+| request 
+
+| response
+fail
+success
+
+09- /cart/un_select_all.do
+| request 
+
+| response
+fail
+success
+
+收货地址管理模块
+01- /shipping/add.do
+| request 
+userId
+receiverName
+receiverPhone
+receiverProvince
+receiverCity
+receiverDistrict
+receiverAddress
+receiverZip
+| response
+fail
+success
+
+02- /shipping/delete.do
+| request 
+shippingId
+| response
+fail
+success
+
+03- /shipping/update.do
+| request 
+userId
+receiverName
+receiverPhone
+receiverProvince
+receiverCity
+receiverDistrict
+receiverAddress
+receiverZip
+| response
+fail
+success
+
+04- /shipping/select.do
+| request 
+shippingId
+| response
+fail
+success
+
+05- /shipping/list.do
+| request 
+pageNum
+pageSize
+| response
+fail
+success
+
+支付模块
+01- /order/pay.do
+| request 
+orderNo
+| response
+fail
+success
+
+02- /order/query_order_pay_status.do
+| request 
+orderNo
+| response
+fail
+success
+
+
+
+订单管理
+01- /order/create.do
+| request 
+shippingId
+| response
+fail
+success
+
+02- /order/get_order_cart_product.do
+| request 
+
+| response
+fail
+success
+
+03- /order/list.do
+| request 
+pageNum
+pageSize
+| response
+fail
+success
+
+04- /order/detail.do
+| request 
+orderNo
+| response
+fail
+success
+
+05- /order/cancel.do
+| request 
+orderNo
+| response
+fail
+success
+
+后台
+01- /manage/order/list.do
+| request 
+pageNum
+pageSize
+| response
+fail
+success
+
+02- /manage/order/search.do
+| request
+orderNo
+| response
+fail
+success
+
+03- /manage/order/detail.do
+| request 
+orderNo
+| response
+fail
+success
+
+04- /manage/order/send_goods.do
+| request 
+orderNo
+| response
+fail
+success
+
